@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT5</title>
+    <script src="aaignment5.js"></script>
+</head>
+<style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    body{
+      margin-top:200px;
+      margin-left:530px;
+      
+    }
+
+    .title{
+      text-transform: uppercase;
+      font-size: large;
+      font-weight: bold;
+      padding: 20px;
+      margin-left:15px;
+    }
+    .display {
+      background-color: rgb(201, 201, 201);
+      padding: 15px;
+      margin-bottom: 20px;
+      width: 250px;
+      text-align: right;
+      font-weight: bold;
+      position: absolute;
+    }
+    #output{
+      position: relative;
+      top:10px;
+      left:20px;
+    }
+    .first-row{
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px;
+      width: 67px;
+      height: 45px;
+      margin-top: 10px;
+      background-color: rgb(194, 194, 194);
+      border: none;
+      color: black;
+      font-size: 20px;
+      outline: none;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color:#000000;
+        color: #ffffff;
+        }
+
+        
+      body {
+        margin-top:40px;
+        margin-left:60px;
+      }
+}
+</style>
+<body>
+
+    <div class="title">
+      Basic calculator 
+    </div>
+    <div class="display">
+
+    </div>
+
+    <p id="output"> 0 </p>
+
+    <div class="first-row">
+        <button id="r1-1" onclick="forclear()" style="width: 138px;"> C </button>
+        <button id="r1-3" onclick="perc()"> % </button>
+        
+</div>
+<div class="second-row">
+   <button id="r2-1" value="7" onclick="fordisplay('7')">7</button>
+   <button id="r2-2" value="8" onclick="fordisplay('8')">8</button>
+   <button id="r2-3"value="9" onclick="fordisplay('9')" >9</button>
+   <button id="r2-4" value="X" onclick="fordisplay('*')">X</button>
+</div>
+<div class="third-row">
+    <button id="r3-1" value="4" onclick="fordisplay('4')">4</button>
+   <button id="r3-2" value="5" onclick="fordisplay('5')">5</button>
+   <button id="r3-3" value="6" onclick="fordisplay('6')">6</button>
+   <button id="r3-4" value="-" onclick="fordisplay('-')">-</button>
+</div>
+<div class="fourth-row">
+   <button id="r4-1" value="1" onclick="fordisplay('1')"  >1</button>
+   <button id="r4-2" value="2" onclick="fordisplay('2')" >2</button>
+   <button id="r4-3" value="3" onclick="fordisplay('3')"  >3</button>
+   <button id="r4-4" value="+" onclick="fordisplay('+')"  >+</button>
+</div>
+<div class="fifth-row">
+  <button id="r5-1" value="0" onclick="fordisplay('0')" >0</button>
+  <button id="r5-2" value="." onclick="fordisplay('.')" >.</button>
+  <button id="r5-3" value="=" onclick="solve()" >=</button>
+</div>
+
+
+    
+</body>
+</html>
+
